@@ -1,0 +1,57 @@
+<!doctype html>
+<head>
+	<title>Bezibel</title>
+	<script language="javascript" src="../raphael/test/vendor/jquery.js"></script>
+	<script language="javascript" src="../raphael/raphael.js"></script>
+	<link rel="stylesheet" href="../raphael/demo.css" type="text/css" media="screen"> 
+</head>
+<body>
+	<div id="dod"></div> 
+</body>
+<script type="text/javascript" charset="utf-8">
+window.onload = function () {
+
+var r = Raphael("dod", 620, 420),
+	discattr = {fill: "#fff", stroke: "none"};
+
+function bezibox(x, y, widthx, widthy, originx, originy, color) {
+	var tlx = x, tly = y, brx = x + widthx, bry = y + widthy,
+		path = [["M", tlx, bry], ["L", brx, tly],
+				["L", originx, originy]],
+        curve = r.path(path).attr({fill: color || Raphael.getColor(), stroke:"none"}),
+		box = r.rect(x, y, widthx, widthy, 2).attr({fill: "#a99", stroke:"none"}),
+	return box;
+}
+
+/* 
+// Calculate curves -- TBD
+function bezicurve(x, y, ox, oy) {
+	var midclsx = Math.abs(ox - x) / 4,
+		midclsy = Math.abs(oy - y) / 4,
+		midfarx = Math.abs(ox - x) / 2 + midclsx,
+		midfary = Math.abs(oy - y) / 2 + midclsy;
+	var path = [["M", x, y], ["C", ax, ay, bx, by, zx, zy],
+					["C", ax, ay - 50, bx, by, zx, zy], ["M", x, y + 60]],
+        curve = r.path(path).attr({fill: color || Raphael.getColor(), stroke:"1px"});
+}
+// Create controls for user dragging	
+	controls = r.set(
+            r.circle(x, y, 5).attr(discattr),
+            r.circle(brx, y, 5).attr(discattr)
+        );
+    controls.drag(move, up);
+...
+function move(dx, dy) {
+    this.update(dx - (this.dx || 0), dy - (this.dy || 0));
+    this.dx = dx;
+    this.dy = dy;
+}
+function up() {
+    this.dx = this.dy = 0;
+}
+*/
+r.text(310, 20, "Something's cooking ...").attr({fill: "#888", "font-size": 16});
+bbx = bezibox(50, 50, 150, 100, 300, 300, "#f99");
+};
+var bbx; // for debugging
+</script>

@@ -1,0 +1,85 @@
+<!doctype html>
+<head>
+	<title>Bezibel</title>
+	<script language="javascript" src="../raphael/test/vendor/jquery.js"></script>
+	<script language="javascript" src="../raphael/raphael.js"></script>
+	<link rel="stylesheet" href="../raphael/demo.css" type="text/css" media="screen"> 
+</head>
+<body>
+	<div id="container"></div>
+</body>
+<script type="text/javascript" charset="utf-8">
+
+var ox = 0, oy = 0;
+var boxes = [];
+var container = $("#container");
+
+function setPosSize(age, origin) {
+	var width = 20 + age * 2, height = 15 + age * 1.4,
+		theta = Math.random() * Math.PI / 2,
+		fontsize = 4 + Math.abs(age / 5),
+		distance = Math.abs(age ^ 1.2) * 2;
+	var x = Math.round(Math.cos(theta) * distance),
+		y = Math.round(Math.sin(theta) * distance);
+	//console.log("d:" + distance + " t:" + theta + " x:" + x + " y:" + y);
+	return { "width": width + "px", "height": height + "px",
+			 "font-size": fontsize + "px", 
+			 "top": x + "px", "left": y + "px" };
+}
+
+function addBox(content, age) {
+/*
+	var x = Math.round(Math.cos(theta) * distance + Math.sin(theta) * distance),
+        y = Math.round(-Math.sin(theta) * distance + Math.cos(theta) * distance);
+*/
+	boxes.push(container
+		.append('<div class="bezibox hidden">' + content + '</div>')
+		.find('.bezibox:last')
+		.css(setPosSize(1, null))
+		.animate(setPosSize(age, null), "slow")
+		.removeClass('hidden'));
+}
+
+var buzzdata = null; // TODO: cache in HTML5
+
+$.getJSON('samplebuzzfeed.json', function(d) { buzzdata = d.data; createBuzz(); })
+
+function createBuzz() {
+	
+	var dateNewest = Infinity;
+	var dateOldest = 0;
+	$.each(buzzdata.items, function(item) {
+		var itemDate = new Date(item.published);
+		if (itemDate < dateNewest) dateNewest = itemDate;
+		if (itemDate > dateOldest) dateOldest = itemDate;
+	});
+	var dateRange = dateNewest - dateOldest;
+
+	$.each(buzzdata.items, function(item) {
+		
+		var item = buzzdata.items[i];
+		var dateDiff = Math.abs(dateNewest - new Date(item.published));
+
+//		if (dateDiff == Infinity) dateDiff = 100;
+		var dateFactor = Math.round(dateDiff / dateRange);
+
+		console.log("dateDiff: " + dateDiff);
+//		addBox(item.title, dateDiff);
+
+	}
+
+}
+
+</script>
+<style type="text/css">
+.hidden { display:none; }
+#container { width:100%; height:100%; }
+.bezibox { 
+	position:absolute; 
+	border:1px solid #ccc;
+	rounded-corners:5px;
+	top:0px; left:0px;	
+}
+
+}
+</style>

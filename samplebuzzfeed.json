@@ -1,0 +1,1666 @@
+{
+ "data": {
+  "kind": "buzz#activityFeed",
+  "links": {
+   "next": [
+    {
+     "href": "https://www.googleapis.com/buzz/v1/activities/search?q\u003dhackcamp&alt\u003djson&max-results\u003d20&c\u003d20"
+    }
+   ],
+   "self": [
+    {
+     "href": "https://www.googleapis.com/buzz/v1/activities/search?q\u003dhackcamp&alt\u003djson",
+     "type": "application/json"
+    }
+   ],
+   "hub": [
+    {
+     "href": "http://pubsubhubbub.appspot.com/"
+    }
+   ]
+  },
+  "title": "Google Buzz Search for hackcamp",
+  "updated": "2010-06-12T16:31:05.626Z",
+  "id": "tag:google.com,2010:buzz-search-feed:GCUi9KShaw6zMHUOyujmsA",
+  "items": [
+   {
+    "kind": "buzz#activity",
+    "title": "Netter Prototyp für Buzz Event Watching http://buzzwatching.appspot.com/events/hackcamp",
+    "published": "2010-06-12T11:10:13.000Z",
+    "updated": "2010-06-12T11:20:27.349Z",
+    "id": "tag:google.com,2010:buzz:z13gt31i4yqaf3ur404chf25jqegfdaiaa4",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/108384201920217141722/@self/tag:google.com,2010:buzz:z13gt31i4yqaf3ur404chf25jqegfdaiaa4/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 1
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/108384201920217141722/fGx1r9ikAA4",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/108384201920217141722/@self/tag:google.com,2010:buzz:z13gt31i4yqaf3ur404chf25jqegfdaiaa4/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 3,
+       "updated": "2010-06-12T11:41:48.455Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/108384201920217141722/@self/tag:google.com,2010:buzz:z13gt31i4yqaf3ur404chf25jqegfdaiaa4?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "108384201920217141722",
+     "name": "Denis Labelle",
+     "profileUrl": "http://www.google.com/profiles/denislabel",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNqjw92Z56qtdCILdmNhcmRfcGhvdG8qKDE2MmZkY2M4OGNkNDc0NDE3YmEwMWRlNjBmZDY2NzcxYWE2Mzk1ZGIwAWcTZDCx0glLT0ds4JcEyHM-wzQi"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "Netter Prototyp für Buzz Event Watching\r\u003cbr /\u003e\r\u003cbr /\u003e\u003ca href\u003d\"http://buzzwatching.appspot.com/events/hackcamp\" \u003ehttp://buzzwatching.appspot.com/events/\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/108384201920217141722/fGx1r9ikAA4",
+        "type": "text/html"
+       }
+      ]
+     },
+     "attachments": [
+      {
+       "type": "article",
+       "title": "Buzz Watching",
+       "content": "Slicing through the buzz, so you don't have to!",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://buzzwatching.appspot.com/events/hackcamp",
+          "type": "text/html"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "source": {
+     "title": "Buzz"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    },
+    "reshare": {
+     "original": {
+      "author": {
+       "id": "102235836543922327908",
+       "photoUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCOSiz4Lar9KDHyILdmNhcmRfcGhvdG8qKDBlMjZjZmM3NzVlMTVmYzMzMTYxYzE4OWNiZmViZmU3MjlhYTgzM2MwAb9sFtBQZxtiG339vF_pobXBzw7d",
+       "name": "Siegfried Hirsch",
+       "uri": "http://www.google.com/profiles/siegfried.hirsch"
+      },
+      "links": {
+       "via": [
+        {
+         "href": "https://www.googleapis.com/buzz/v1/activities/102235836543922327908/@self/tag:google.com,2010:buzz:z13tyltz1uipfhwtc23jjzwb0qzoen5d5?alt\u003djson",
+         "type": "application/json"
+        }
+       ]
+      }
+     },
+     "sharedBy": {
+      "author": {
+       "id": "102235836543922327908",
+       "photoUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCOSiz4Lar9KDHyILdmNhcmRfcGhvdG8qKDBlMjZjZmM3NzVlMTVmYzMzMTYxYzE4OWNiZmViZmU3MjlhYTgzM2MwAb9sFtBQZxtiG339vF_pobXBzw7d",
+       "name": "Siegfried Hirsch",
+       "uri": "http://www.google.com/profiles/siegfried.hirsch"
+      },
+      "links": {
+       "via": [
+        {
+         "href": "https://www.googleapis.com/buzz/v1/activities/102235836543922327908/@self/tag:google.com,2010:buzz:z13tyltz1uipfhwtc23jjzwb0qzoen5d5?alt\u003djson",
+         "type": "application/json"
+        }
+       ]
+      }
+     }
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "We, who are about to hack, salute you: http://hackcamp.pbworks.com/HackCamp-London",
+    "published": "2010-06-12T05:04:37.000Z",
+    "updated": "2010-06-12T05:04:38.369Z",
+    "id": "tag:google.com,2010:buzz:z125yljoylb4jbgwg04cjldqhk2ffnwpzys0k",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z125yljoylb4jbgwg04cjldqhk2ffnwpzys0k/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 2
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/QV7L9hRFuxN",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z125yljoylb4jbgwg04cjldqhk2ffnwpzys0k/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 2,
+       "updated": "2010-06-12T05:39:51.647Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z125yljoylb4jbgwg04cjldqhk2ffnwpzys0k?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "We, who are about to hack, salute you: \u003ca href\u003d\"http://hackcamp.pbworks.com/HackCamp-London\" \u003ehttp://\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e.pbworks.com/\u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e-London\u003c/a\u003e",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/QV7L9hRFuxN",
+        "type": "text/html"
+       }
+      ]
+     },
+     "attachments": [
+      {
+       "type": "article",
+       "title": "HackCamp [licensed for non-commercial use only] / HackCamp London",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://hackcamp.pbworks.com/HackCamp-London",
+          "type": "text/html"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "source": {
+     "title": "Buzz"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "hackcamp: If you're late, let reception know you're here for HackCamp, and head up to the 5th flo...",
+    "published": "2010-06-12T10:18:48.000Z",
+    "updated": "2010-06-12T10:18:48.000Z",
+    "id": "tag:google.com,2010:buzz:z125ix1w0krfsjgfi23wehng0muwz5jzq04",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z125ix1w0krfsjgfi23wehng0muwz5jzq04/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/KTrevMNxrP3",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z125ix1w0krfsjgfi23wehng0muwz5jzq04/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T10:18:48.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z125ix1w0krfsjgfi23wehng0muwz5jzq04?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/hackcamp\"\u003e\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e: If you&#39;re late, let reception know you&#39;re here for \u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e, and head up to the 5th floor. Hurry though, you&#39;re missing the presentations!",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/KTrevMNxrP3",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/hackcamp/statuses/15993404857",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "hackcamp: Good Morning Everyone!! Today is the grand opening of Hogwarts. I mean HackCamp!",
+    "published": "2010-06-12T06:46:14.000Z",
+    "updated": "2010-06-12T06:46:14.000Z",
+    "id": "tag:google.com,2010:buzz:z12dx1bifszldtiht04cjldqhk2ffnwpzys0k",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12dx1bifszldtiht04cjldqhk2ffnwpzys0k/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 2
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/Y24zfL8xNAn",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12dx1bifszldtiht04cjldqhk2ffnwpzys0k/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T06:46:14.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12dx1bifszldtiht04cjldqhk2ffnwpzys0k?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/hackcamp\"\u003e\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e: Good Morning Everyone!! Today is the grand opening of Hogwarts. I mean \u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e!",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/Y24zfL8xNAn",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/hackcamp/statuses/15985624543",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "Temporarily hacking my account to publish tweets from the official HackCamp: http://twitter.com/h...",
+    "published": "2010-06-12T01:07:09.000Z",
+    "updated": "2010-06-12T01:07:10.197Z",
+    "id": "tag:google.com,2010:buzz:z135vnqzhoasxv50o23wehng0muwz5jzq04",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z135vnqzhoasxv50o23wehng0muwz5jzq04/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 2
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/4NbaWeACtin",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z135vnqzhoasxv50o23wehng0muwz5jzq04/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T01:07:10.197Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z135vnqzhoasxv50o23wehng0muwz5jzq04?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "Temporarily hacking my account to publish tweets from the official \u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e: \u003ca href\u003d\"http://twitter.com/hackcamp\" \u003ehttp://twitter.com/\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e account. It should only be announcements and only for the next 40 hours.\r\u003cbr /\u003e\r\u003cbr /\u003eApologies in advance.",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/4NbaWeACtin",
+        "type": "text/html"
+       }
+      ]
+     },
+     "attachments": [
+      {
+       "type": "article",
+       "title": "HackCamp (hackcamp) on Twitter",
+       "content": "HackCamp London at Google",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://twitter.com/hackcamp",
+          "type": "text/html"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "source": {
+     "title": "Buzz"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "Netter Prototyp für Buzz Event Watching http://buzzwatching.appspot.com/events/hackcamp",
+    "published": "2010-06-12T11:10:13.000Z",
+    "updated": "2010-06-12T11:10:14.184Z",
+    "id": "tag:google.com,2010:buzz:z13tyltz1uipfhwtc23jjzwb0qzoen5d5",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/102235836543922327908/@self/tag:google.com,2010:buzz:z13tyltz1uipfhwtc23jjzwb0qzoen5d5/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 1
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/102235836543922327908/7qoJJYZ27dk",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/102235836543922327908/@self/tag:google.com,2010:buzz:z13tyltz1uipfhwtc23jjzwb0qzoen5d5/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T11:10:14.184Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/102235836543922327908/@self/tag:google.com,2010:buzz:z13tyltz1uipfhwtc23jjzwb0qzoen5d5?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "102235836543922327908",
+     "name": "Siegfried Hirsch",
+     "profileUrl": "http://www.google.com/profiles/siegfried.hirsch",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCOSiz4Lar9KDHyILdmNhcmRfcGhvdG8qKDBlMjZjZmM3NzVlMTVmYzMzMTYxYzE4OWNiZmViZmU3MjlhYTgzM2MwAb9sFtBQZxtiG339vF_pobXBzw7d"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "Netter Prototyp für Buzz Event Watching\r\u003cbr /\u003e\r\u003cbr /\u003e\u003ca href\u003d\"http://buzzwatching.appspot.com/events/hackcamp\" \u003ehttp://buzzwatching.appspot.com/events/\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/102235836543922327908/7qoJJYZ27dk",
+        "type": "text/html"
+       }
+      ]
+     },
+     "attachments": [
+      {
+       "type": "article",
+       "title": "Buzz Watching",
+       "content": "Slicing through the buzz, so you don't have to!",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://buzzwatching.appspot.com/events/hackcamp",
+          "type": "text/html"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "source": {
+     "title": "Buzz"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "hackcamp: If you have an API you want people to hack on grab an organiser this morning before the...",
+    "published": "2010-06-12T07:00:37.000Z",
+    "updated": "2010-06-12T07:00:37.000Z",
+    "id": "tag:google.com,2010:buzz:z12cfvrj2wjugnpog04cjldqhk2ffnwpzys0k",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12cfvrj2wjugnpog04cjldqhk2ffnwpzys0k/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/QXjkpkChFGb",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12cfvrj2wjugnpog04cjldqhk2ffnwpzys0k/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T07:00:37.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12cfvrj2wjugnpog04cjldqhk2ffnwpzys0k?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/hackcamp\"\u003e\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e: If you have an API you want people to hack on grab an organiser this morning before the talks start.",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/QXjkpkChFGb",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/hackcamp/statuses/15986181593",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "hackcamp: The hackcamp venue is ready and looking awesome. http://twitpic.com/1vy0gr",
+    "published": "2010-06-11T23:13:45.000Z",
+    "updated": "2010-06-11T23:13:45.000Z",
+    "id": "tag:google.com,2010:buzz:z12zjntjaymgfbauy23wehng0muwz5jzq04",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12zjntjaymgfbauy23wehng0muwz5jzq04/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/GkzgEMUVGwP",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12zjntjaymgfbauy23wehng0muwz5jzq04/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-11T23:13:45.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12zjntjaymgfbauy23wehng0muwz5jzq04?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/hackcamp\"\u003e\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e: The \u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e venue is ready and looking awesome.  \u003ca href\u003d\"http://twitpic.com/1vy0gr\" \u003ehttp://twitpic.com/1vy0gr\u003c/a\u003e",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/GkzgEMUVGwP",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/hackcamp/statuses/15961822171",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "hackcamp: RT @themattharris: To everyone at @hackcamp my slides (with URLs) are now up on slidesh...",
+    "published": "2010-06-12T12:58:33.000Z",
+    "updated": "2010-06-12T12:58:33.000Z",
+    "id": "tag:google.com,2010:buzz:z12fyxjwxnekdjroe04cjldqhk2ffnwpzys0k",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12fyxjwxnekdjroe04cjldqhk2ffnwpzys0k/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/QCuqaG5ns1g",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12fyxjwxnekdjroe04cjldqhk2ffnwpzys0k/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T12:58:33.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12fyxjwxnekdjroe04cjldqhk2ffnwpzys0k?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/hackcamp\"\u003e\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e: RT @\u003ca href\u003d\"http://twitter.com/themattharris\"\u003ethemattharris\u003c/a\u003e: To everyone at @\u003ca href\u003d\"http://twitter.com/hackcamp\"\u003e\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e my slides (with URLs) are now up on slideshare: \u003ca href\u003d\"http://www.slideshare.net/themattharris/hackcamp\" \u003ehttp://www.slideshare.net/themattharris/\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/QCuqaG5ns1g",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/hackcamp/statuses/16000230998",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "hackcamp: The coffee machine is working once again, thanks to the Google searching, PDF reading a...",
+    "published": "2010-06-12T12:09:05.000Z",
+    "updated": "2010-06-12T12:09:05.000Z",
+    "id": "tag:google.com,2010:buzz:z12ach1hctuzsdufj23wehng0muwz5jzq04",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12ach1hctuzsdufj23wehng0muwz5jzq04/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/KhoPQuT24xb",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12ach1hctuzsdufj23wehng0muwz5jzq04/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T12:09:05.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12ach1hctuzsdufj23wehng0muwz5jzq04?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/hackcamp\"\u003e\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e: The coffee machine is working once again, thanks to the Google searching, PDF reading and all-round button pressing by @\u003ca href\u003d\"http://twitter.com/mseckington\"\u003emseckington\u003c/a\u003e!",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/KhoPQuT24xb",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/hackcamp/statuses/15997805706",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "PaperWiki",
+    "published": "2010-06-12T01:09:23.000Z",
+    "updated": "2010-06-12T01:13:14.141Z",
+    "id": "tag:google.com,2010:buzz:z12lfrb4vlr2d310e23wehng0muwz5jzq04",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12lfrb4vlr2d310e23wehng0muwz5jzq04/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 1
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/2gKuuVzPRk5",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12lfrb4vlr2d310e23wehng0muwz5jzq04/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 1,
+       "updated": "2010-06-12T05:37:29.660Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12lfrb4vlr2d310e23wehng0muwz5jzq04?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "PaperWiki",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/2gKuuVzPRk5",
+        "type": "text/html"
+       }
+      ]
+     },
+     "attachments": [
+      {
+       "type": "photo",
+       "title": "PaperWiki",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://www.flickr.com/photos/38234898@N00/4691609351",
+          "type": "text/html"
+         }
+        ],
+        "preview": [
+         {
+          "href": "http://images0-focus-opensocial.googleusercontent.com/gadgets/proxy?container\u003dfocus&gadget\u003da&resize_h\u003d100&url\u003dhttp%3A%2F%2Ffarm5.static.flickr.com%2F4046%2F4691609351_5c4e13147d_m.jpg",
+          "type": "image/jpeg"
+         },
+         {
+          "href": "http://images0-focus-opensocial.googleusercontent.com/gadgets/proxy?container\u003dfocus&gadget\u003da&resize_h\u003d100&url\u003dhttp%3A%2F%2Ffarm5.static.flickr.com%2F4046%2F4691609351_5c4e13147d_b.jpg",
+          "type": "image/jpeg"
+         }
+        ],
+        "enclosure": [
+         {
+          "href": "http://farm5.static.flickr.com/4046/4691609351_5d926e3cf5_o.jpg",
+          "type": "image/jpeg",
+          "height": 2832,
+          "width": 4256
+         }
+        ]
+       }
+      },
+      {
+       "type": "photo",
+       "title": "PaperWiki",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://www.flickr.com/photos/38234898@N00/4691606967",
+          "type": "text/html"
+         }
+        ],
+        "preview": [
+         {
+          "href": "http://images0-focus-opensocial.googleusercontent.com/gadgets/proxy?container\u003dfocus&gadget\u003da&resize_h\u003d100&url\u003dhttp%3A%2F%2Ffarm5.static.flickr.com%2F4018%2F4691606967_72ee109159_m.jpg",
+          "type": "image/jpeg"
+         },
+         {
+          "href": "http://images0-focus-opensocial.googleusercontent.com/gadgets/proxy?container\u003dfocus&gadget\u003da&resize_h\u003d100&url\u003dhttp%3A%2F%2Ffarm5.static.flickr.com%2F4018%2F4691606967_72ee109159_b.jpg",
+          "type": "image/jpeg"
+         }
+        ],
+        "enclosure": [
+         {
+          "href": "http://farm5.static.flickr.com/4018/4691606967_d5a8e1b89f_o.jpg",
+          "type": "image/jpeg",
+          "height": 2832,
+          "width": 4256
+         }
+        ]
+       }
+      },
+      {
+       "type": "photo",
+       "title": "The team begins",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://www.flickr.com/photos/38234898@N00/4691604627",
+          "type": "text/html"
+         }
+        ],
+        "preview": [
+         {
+          "href": "http://images0-focus-opensocial.googleusercontent.com/gadgets/proxy?container\u003dfocus&gadget\u003da&resize_h\u003d100&url\u003dhttp%3A%2F%2Ffarm5.static.flickr.com%2F4062%2F4691604627_77fcc16e0c_m.jpg",
+          "type": "image/jpeg"
+         },
+         {
+          "href": "http://images0-focus-opensocial.googleusercontent.com/gadgets/proxy?container\u003dfocus&gadget\u003da&resize_h\u003d100&url\u003dhttp%3A%2F%2Ffarm5.static.flickr.com%2F4062%2F4691604627_77fcc16e0c_b.jpg",
+          "type": "image/jpeg"
+         }
+        ],
+        "enclosure": [
+         {
+          "href": "http://farm5.static.flickr.com/4062/4691604627_9fdd6a0fb3_o.jpg",
+          "type": "image/jpeg",
+          "height": 2832,
+          "width": 4256
+         }
+        ]
+       }
+      },
+      {
+       "type": "photo",
+       "title": "The Venue",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://www.flickr.com/photos/38234898@N00/4692231970",
+          "type": "text/html"
+         }
+        ],
+        "preview": [
+         {
+          "href": "http://images0-focus-opensocial.googleusercontent.com/gadgets/proxy?container\u003dfocus&gadget\u003da&resize_h\u003d100&url\u003dhttp%3A%2F%2Ffarm5.static.flickr.com%2F4059%2F4692231970_6a8fd1fa3f_m.jpg",
+          "type": "image/jpeg"
+         },
+         {
+          "href": "http://images0-focus-opensocial.googleusercontent.com/gadgets/proxy?container\u003dfocus&gadget\u003da&resize_h\u003d100&url\u003dhttp%3A%2F%2Ffarm5.static.flickr.com%2F4059%2F4692231970_6a8fd1fa3f_b.jpg",
+          "type": "image/jpeg"
+         }
+        ],
+        "enclosure": [
+         {
+          "href": "http://farm5.static.flickr.com/4059/4692231970_0d75291fbf_o.jpg",
+          "type": "image/jpeg",
+          "height": 2832,
+          "width": 4256
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "source": {
+     "title": "Flickr"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "Test post that mentions hackcamp just to see if my demo picks up the search term",
+    "published": "2010-06-11T22:20:30.000Z",
+    "updated": "2010-06-11T22:20:30.556Z",
+    "id": "tag:google.com,2010:buzz:z13aj3kojy2pcnfux23wehng0muwz5jzq04",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z13aj3kojy2pcnfux23wehng0muwz5jzq04/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/GcnV4M2WxAo",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z13aj3kojy2pcnfux23wehng0muwz5jzq04/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-11T22:20:30.556Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z13aj3kojy2pcnfux23wehng0muwz5jzq04?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "Test post that mentions \u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e just to see if my demo picks up the search term",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/GcnV4M2WxAo",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "source": {
+     "title": "Posted from the web"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "cindyli: at #hackcamp in London.Not sure what to hack on and may have entered an area that has ex...",
+    "published": "2010-06-12T10:07:57.000Z",
+    "updated": "2010-06-12T10:07:57.000Z",
+    "id": "tag:google.com,2010:buzz:z13kx1oovz2udh01b23qu3la4snbt54dy",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/117456193973429562226/@self/tag:google.com,2010:buzz:z13kx1oovz2udh01b23qu3la4snbt54dy/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/117456193973429562226/7XN1BuYnfqr",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/117456193973429562226/@self/tag:google.com,2010:buzz:z13kx1oovz2udh01b23qu3la4snbt54dy/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T10:07:57.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/117456193973429562226/@self/tag:google.com,2010:buzz:z13kx1oovz2udh01b23qu3la4snbt54dy?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "117456193973429562226",
+     "name": "Cindy Li",
+     "profileUrl": "http://www.google.com/profiles/cindylidesign",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABECPLW1aTp_bag8gEiC3ZjYXJkX3Bob3RvKig2YWM3ZGY5MTA1MTZkN2JhY2E1OTdkM2JkZmYwOTdkZTQ4NTE2NWJmMAEEUW4Yt2wup6WQuLAVf06AA-s7Bw"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/cindyli\"\u003ecindyli\u003c/a\u003e: at \u003ca href\u003d\"http://www.google.com/search?tbo\u003d1&amp;tbs\u003dmbl:1&amp;q\u003d%23hackcamp\"\u003e#\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e in London.Not sure what to hack on and may have entered an area that has exceeded my geek quotient.Any ideas on hacks?",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/117456193973429562226/7XN1BuYnfqr",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/cindyli/statuses/15993020219",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "cindyli: watching @themattharris be the belle of the #hackcamp as he explains twitter api, annota...",
+    "published": "2010-06-12T13:07:34.000Z",
+    "updated": "2010-06-12T13:07:34.000Z",
+    "id": "tag:google.com,2010:buzz:z120whfpjxyusv10c23qu3la4snbt54dy",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/117456193973429562226/@self/tag:google.com,2010:buzz:z120whfpjxyusv10c23qu3la4snbt54dy/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/117456193973429562226/2LvRgvUjonx",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/117456193973429562226/@self/tag:google.com,2010:buzz:z120whfpjxyusv10c23qu3la4snbt54dy/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T13:07:34.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/117456193973429562226/@self/tag:google.com,2010:buzz:z120whfpjxyusv10c23qu3la4snbt54dy?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "117456193973429562226",
+     "name": "Cindy Li",
+     "profileUrl": "http://www.google.com/profiles/cindylidesign",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABECPLW1aTp_bag8gEiC3ZjYXJkX3Bob3RvKig2YWM3ZGY5MTA1MTZkN2JhY2E1OTdkM2JkZmYwOTdkZTQ4NTE2NWJmMAEEUW4Yt2wup6WQuLAVf06AA-s7Bw"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/cindyli\"\u003ecindyli\u003c/a\u003e: watching @\u003ca href\u003d\"http://twitter.com/themattharris\"\u003ethemattharris\u003c/a\u003e be the belle of the \u003ca href\u003d\"http://www.google.com/search?tbo\u003d1&amp;tbs\u003dmbl:1&amp;q\u003d%23hackcamp\"\u003e#\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e as he explains twitter api, annotations et all.",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/117456193973429562226/2LvRgvUjonx",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/cindyli/statuses/16000710542",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "HackCamp in Google London office canteen detected, with the ideas starting from Taxi Ripoff Detec...",
+    "published": "2010-06-12T12:23:24.000Z",
+    "updated": "2010-06-12T12:23:25.128Z",
+    "id": "tag:google.com,2010:buzz:z12xsfnalon4cpbyn04ccn4hdyvwelw5zq40k",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/101721326069619819243/@self/tag:google.com,2010:buzz:z12xsfnalon4cpbyn04ccn4hdyvwelw5zq40k/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/101721326069619819243/cLKZmpbdnB4",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/101721326069619819243/@self/tag:google.com,2010:buzz:z12xsfnalon4cpbyn04ccn4hdyvwelw5zq40k/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T12:23:25.128Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/101721326069619819243/@self/tag:google.com,2010:buzz:z12xsfnalon4cpbyn04ccn4hdyvwelw5zq40k?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "101721326069619819243",
+     "name": "Anna Chernova",
+     "profileUrl": "http://www.google.com/profiles/chernova",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCOuFvNKLntjxFyILdmNhcmRfcGhvdG8qKGY0MmM0ZTgxNDY1Y2ZlZjQwOTgzNjViMDgyYWNiMDg0NmMxNjkwNjEwAXIGvFaNO9P5u8pvWYhdeefrD_Fz"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e in Google London office canteen detected, with the ideas starting from Taxi Ripoff Detector for Android that compares route taken with ideal route from routing API to (Web based) IDE for iPad. TWIMC it runs today till midnight, and tomorrow as well.",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/101721326069619819243/cLKZmpbdnB4",
+        "type": "text/html"
+       }
+      ]
+     },
+     "attachments": [
+      {
+       "type": "article",
+       "title": "HackCamp [licensed for non-commercial use only] / HackCamp London",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://hackcamp.pbworks.com/HackCamp-London",
+          "type": "text/html"
+         }
+        ]
+       }
+      },
+      {
+       "type": "article",
+       "title": "HackCamp",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://london.hackcamp.org.uk/",
+          "type": "text/html"
+         }
+        ]
+       }
+      },
+      {
+       "type": "article",
+       "title": "Buzz Watching",
+       "content": "Slicing through the buzz, so you don't have to!",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://buzzwatching.appspot.com/events/hackcamp",
+          "type": "text/html"
+         }
+        ]
+       }
+      },
+      {
+       "type": "article",
+       "title": "Flickr: HackCamp",
+       "content": "Flickr is almost certainly the best online photo management and sharing application in the world. Show off your favorite photos and videos to the world, securely and privately show content to your fri...",
+       "links": {
+        "alternate": [
+         {
+          "href": "http://www.flickr.com/groups/hackcamp/",
+          "type": "text/html"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "source": {
+     "title": "Buzz"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "The big list of people attending HackCamp next week HackCamp - london.hackcamp.org.uk",
+    "published": "1970-01-01T00:00:00.000Z",
+    "updated": "2010-06-06T14:29:11.639Z",
+    "id": "tag:google.com,2010:buzz:z12yftcizsvizvcfp23wehng0muwz5jzq04",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12yftcizsvizvcfp23wehng0muwz5jzq04/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/Lcd5nUkYABD",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12yftcizsvizvcfp23wehng0muwz5jzq04/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-06T14:29:11.639Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z12yftcizsvizvcfp23wehng0muwz5jzq04?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "share"
+    ],
+    "object": {
+     "type": "note",
+     "content": "The big list of people attending \u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e next week\u003cbr /\u003e\u003cbr /\u003e\u003ca href\u003d\"http://london.hackcamp.org.uk/attendees/\"\u003e\u003cb\u003e\u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e\u003c/b\u003e\u003c/a\u003e - \u003ca href\u003d\"http://london.hackcamp.org.uk/\" class\u003d\"ot-origin-anchor\"\u003elondon.\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e.org.uk\u003c/a\u003e",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/Lcd5nUkYABD",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "source": {
+     "title": "Google Reader"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "mpelembe: RT @fauzg: @cbetta @mattcopp have fun at #hackcamp. Build something amazing :)",
+    "published": "2010-06-12T06:01:44.000Z",
+    "updated": "2010-06-12T06:01:44.000Z",
+    "id": "tag:google.com,2010:buzz:z13rwl4w0nnejp0v422pzxjaywuavrdgi04",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/109847912981686925895/@self/tag:google.com,2010:buzz:z13rwl4w0nnejp0v422pzxjaywuavrdgi04/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/109847912981686925895/HjRfbXLVDkr",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/109847912981686925895/@self/tag:google.com,2010:buzz:z13rwl4w0nnejp0v422pzxjaywuavrdgi04/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T06:01:44.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/109847912981686925895/@self/tag:google.com,2010:buzz:z13rwl4w0nnejp0v422pzxjaywuavrdgi04?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "109847912981686925895",
+     "name": "Sam Mbale",
+     "profileUrl": "http://www.google.com/profiles/smbale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABECMf0oOPilbTViAEiC3ZjYXJkX3Bob3RvKig2N2NkZjJkMzEwMzExZmZjNjczOTVkZmE5OTVhNGYwOTcyZjNmMmI4MAG3Qy4d55JEA7fr1Lli2mWVVgmIGg"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/mpelembe\"\u003empelembe\u003c/a\u003e: RT @\u003ca href\u003d\"http://twitter.com/fauzg\"\u003efauzg\u003c/a\u003e: @\u003ca href\u003d\"http://twitter.com/cbetta\"\u003ecbetta\u003c/a\u003e @\u003ca href\u003d\"http://twitter.com/mattcopp\"\u003emattcopp\u003c/a\u003e have fun at \u003ca href\u003d\"http://www.google.com/search?tbo\u003d1&amp;tbs\u003dmbl:1&amp;q\u003d%23hackcamp\"\u003e#\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e. Build something amazing :)",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/109847912981686925895/HjRfbXLVDkr",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/mpelembe/statuses/15983799269",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "The list of initial ideas for hacks at HackCamp London HackCamp [licensed for non-commercial use ...",
+    "published": "1970-01-01T00:00:00.000Z",
+    "updated": "2010-06-09T09:25:32.728Z",
+    "id": "tag:google.com,2010:buzz:z124vlwrgnbrhbisb23wehng0muwz5jzq04",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z124vlwrgnbrhbisb23wehng0muwz5jzq04/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/105037104815911535953/2FRwqk1cdCc",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z124vlwrgnbrhbisb23wehng0muwz5jzq04/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-09T09:25:32.728Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/105037104815911535953/@self/tag:google.com,2010:buzz:z124vlwrgnbrhbisb23wehng0muwz5jzq04?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "105037104815911535953",
+     "name": "Adewale Oshineye",
+     "profileUrl": "http://www.google.com/profiles/adewale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCNGKxIbHhNnzRSILdmNhcmRfcGhvdG8qKDliZTM0NGEwMGEyYmFiM2Q1ZmQwZmU2MTU3ZGY2ZTM0N2E2N2I0MjgwAQsGzj5kfM45dscXkq00Lf1VQlR8"
+    },
+    "verbs": [
+     "share"
+    ],
+    "object": {
+     "type": "note",
+     "content": "The list of initial ideas for hacks at \u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e London\u003cbr /\u003e\u003cbr /\u003e\u003ca href\u003d\"http://hackcamp.pbworks.com/HackCamp-Ideas#\"\u003e\u003cb\u003e\u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e [licensed for non-commercial use only] / \u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e Ideas\u003c/b\u003e\u003c/a\u003e - \u003ca href\u003d\"http://hackcamp.pbworks.com/\" class\u003d\"ot-origin-anchor\"\u003e\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e.pbworks.com\u003c/a\u003e",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/105037104815911535953/2FRwqk1cdCc",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "source": {
+     "title": "Google Reader"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "mpelembe: On my way to #hackcamp",
+    "published": "2010-06-12T06:01:16.000Z",
+    "updated": "2010-06-12T06:01:16.000Z",
+    "id": "tag:google.com,2010:buzz:z13qtzgggvizyhsgv04cerzpwvvncvix5ls0k",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/109847912981686925895/@self/tag:google.com,2010:buzz:z13qtzgggvizyhsgv04cerzpwvvncvix5ls0k/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/109847912981686925895/T47BYT979dv",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/109847912981686925895/@self/tag:google.com,2010:buzz:z13qtzgggvizyhsgv04cerzpwvvncvix5ls0k/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T06:01:16.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/109847912981686925895/@self/tag:google.com,2010:buzz:z13qtzgggvizyhsgv04cerzpwvvncvix5ls0k?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "109847912981686925895",
+     "name": "Sam Mbale",
+     "profileUrl": "http://www.google.com/profiles/smbale",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABECMf0oOPilbTViAEiC3ZjYXJkX3Bob3RvKig2N2NkZjJkMzEwMzExZmZjNjczOTVkZmE5OTVhNGYwOTcyZjNmMmI4MAG3Qy4d55JEA7fr1Lli2mWVVgmIGg"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/mpelembe\"\u003empelembe\u003c/a\u003e: On my way to \u003ca href\u003d\"http://www.google.com/search?tbo\u003d1&amp;tbs\u003dmbl:1&amp;q\u003d%23hackcamp\"\u003e#\u003cSPAN class\u003d\"otsearchterm\"\u003ehackcamp\u003c/SPAN\u003e\u003c/a\u003e",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/109847912981686925895/T47BYT979dv",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/mpelembe/statuses/15983779468",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   },
+   {
+    "kind": "buzz#activity",
+    "title": "tobestobs: At the HackCamp at the Google offices here in London. Finally going to have time to wo...",
+    "published": "2010-06-12T08:53:47.000Z",
+    "updated": "2010-06-12T08:53:47.000Z",
+    "id": "tag:google.com,2010:buzz:z13tyfnihnfcefkky22etnfqoq2kw3qxr04",
+    "links": {
+     "liked": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/107442551719327799024/@self/tag:google.com,2010:buzz:z13tyfnihnfcefkky22etnfqoq2kw3qxr04/@liked?alt\u003djson",
+       "type": "application/json",
+       "count": 0
+      }
+     ],
+     "alternate": [
+      {
+       "href": "http://www.google.com/buzz/107442551719327799024/674bo5RdFSr",
+       "type": "text/html"
+      }
+     ],
+     "replies": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/107442551719327799024/@self/tag:google.com,2010:buzz:z13tyfnihnfcefkky22etnfqoq2kw3qxr04/@comments?alt\u003djson",
+       "type": "application/json",
+       "count": 0,
+       "updated": "2010-06-12T08:53:47.000Z"
+      }
+     ],
+     "self": [
+      {
+       "href": "https://www.googleapis.com/buzz/v1/activities/107442551719327799024/@self/tag:google.com,2010:buzz:z13tyfnihnfcefkky22etnfqoq2kw3qxr04?alt\u003djson",
+       "type": "application/json"
+      }
+     ]
+    },
+    "actor": {
+     "id": "107442551719327799024",
+     "name": "Marc Tobias Kunisch",
+     "profileUrl": "http://www.google.com/profiles/tobestobs",
+     "thumbnailUrl": "http://www.google.com/s2/photos/public/AIbEiAIAAABDCPCthuizq9CkZyILdmNhcmRfcGhvdG8qKGJmODI5N2FjMGM0MGUwZTBiMmZiMzBmMmU2ZDYwYjVmNzVhODBiMDkwARtsf0HtRwMX37Yyo7orJrx0dj44"
+    },
+    "verbs": [
+     "post"
+    ],
+    "object": {
+     "type": "note",
+     "content": "\u003ca href\u003d\"http://twitter.com/tobestobs\"\u003etobestobs\u003c/a\u003e: At the \u003cSPAN class\u003d\"otsearchterm\"\u003eHackCamp\u003c/SPAN\u003e at the Google offices here in London. Finally going to have time to work on the font directory a bit more.",
+     "links": {
+      "alternate": [
+       {
+        "href": "http://www.google.com/buzz/107442551719327799024/674bo5RdFSr",
+        "type": "text/html"
+       }
+      ]
+     }
+    },
+    "crosspostSource": "tag:twitter.com,2007:http://twitter.com/tobestobs/statuses/15990381445",
+    "source": {
+     "title": "Twitter"
+    },
+    "visibility": {
+     "entries": [
+      {
+       "id": "tag:google.com,2010:buzz-group:@me:@public",
+       "title": "Public"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}
