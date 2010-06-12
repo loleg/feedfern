@@ -3,6 +3,7 @@
 	<title>Bezibel</title>
 	<script language="javascript" src="../raphael/test/vendor/jquery.js"></script>
 	<script language="javascript" src="../raphael/raphael.js"></script>
+	<script language="javascript" src="jquery.easydrag.js"></script>
 	<link rel="stylesheet" href="../raphael/demo.css" type="text/css" media="screen"> 
 </head>
 <body>
@@ -10,76 +11,150 @@
 </body>
 <script type="text/javascript" charset="utf-8">
 
-var ox = 0, oy = 0;
-var boxes = [];
+var ox = 0, oy = 0, PRECISION_RANGE = 100;
 var container = $("#container");
 
-function setPosSize(age, origin) {
-	var width = 20 + age * 2, height = 15 + age * 1.4,
-		theta = Math.random() * Math.PI / 2,
-		fontsize = 4 + Math.abs(age / 5),
-		distance = Math.abs(age ^ 1.2) * 2;
+// get Buzz feed
+var buzzdata = null; // TODO: cache in HTML5
+
+function getBuzzData(d) { buzzdata = d.data; createBuzz(); }
+
+function setPosSize(age, theta, origin) {
+	var width = 20 + (age) * 3, height = 10 + (age) * 1.2,
+		fontsize = 4 + age / 4,
+		distance = age * (container.width() - width) / PRECISION_RANGE;
 	var x = Math.round(Math.cos(theta) * distance),
-		y = Math.round(Math.sin(theta) * distance);
+		y = Math.round(Math.sin(theta) * distance)/2;
 	//console.log("d:" + distance + " t:" + theta + " x:" + x + " y:" + y);
 	return { "width": width + "px", "height": height + "px",
 			 "font-size": fontsize + "px", 
-			 "top": x + "px", "left": y + "px" };
+			 "top": y + "px", "left": x + "px" };
 }
 
-function addBox(content, age) {
+function addBox(content, age, myurl) {
 /*
 	var x = Math.round(Math.cos(theta) * distance + Math.sin(theta) * distance),
         y = Math.round(-Math.sin(theta) * distance + Math.cos(theta) * distance);
 */
-	boxes.push(container
+	var theta = Math.random() * Math.PI / 2;
+
+	container
 		.append('<div class="bezibox hidden">' + content + '</div>')
 		.find('.bezibox:last')
-		.css(setPosSize(1, null))
-		.animate(setPosSize(age, null), "slow")
-		.removeClass('hidden'));
+	// Set metadata
+		.attr("href", myurl)
+	// Set position and animate
+		.css(setPosSize(1, theta, null))
+		.attr("age", age).attr("theta", theta)
+		.removeClass('hidden')
+		.dblclick(function() { window.open($(this).attr("href")); })
+	// Draggable
+		.easydrag()
+		.ondrag(function() { window.isbeingdragged = true; })
+		.ondrop(function() { window.isbeingdragged = false; })
+		.mousedown(function() {
+			if(this.isAnim || this.isBig) return;
+  			$(this).css("opacity","1.0").animate({
+				"width":$(this).width()*2,
+				"height":$(this).height()*2,
+				"font-size":parseInt($(this).css("font-size"))+5,
+			}, "fast", "linear", function() { this.isAnim = false; this.isBig = true; });
+			this.isAnim = true;
+		})
+		.mouseup(function() {
+			if(this.isAnim || !this.isBig) return;
+			$(this).css("opacity","0.5").animate({
+				"width":parseInt($(this).width()/2),
+				"height":parseInt($(this).height()/2),
+				"font-size":parseInt($(this).css("font-size"))-5,
+			}, "fast", "linear", function() { this.isAnim = false; this.isBig = false; });
+			if (parseInt($(this).offset().left) > parseInt(container.width()) - parseInt($(this).width()) / 2) $(this).remove();
+			this.isAnim = true;
+		})
+	;
 }
 
-var buzzdata = null; // TODO: cache in HTML5
+function calcBuzzDates() {
+	
+	// get date ranges
+	var dateNewest, dateOldest;
+	$.each(buzzdata.items, function() {
+		var itemDate = new Date(this.published);
+		if (itemDate / 60000 > 1) { // ignore 1970 dates
+			if (itemDate > dateNewest || !dateNewest) dateNewest = itemDate;
+			if (itemDate < dateOldest || !dateOldest) dateOldest = itemDate;
+		}
+	});
+	var dateRange = new Date().getTime() - dateOldest;
 
-$.getJSON('samplebuzzfeed.json', function(d) { buzzdata = d.data; createBuzz(); })
+	// set age difference on each element;
+	$.each(buzzdata.items, function(i) {
+		var dd = new Date(this.published) - dateOldest;
+			dd = (dd < 1) ? 0 : dd / dateRange;
+			dd = Math.round(dd * PRECISION_RANGE);
+		// update age if element exists
+		container.find("[@age=" + this.dateDiff + "]").attr("age", dd);
+		this.dateDiff = dd;
+	});
+}
 
 function createBuzz() {
-	
-	var dateNewest = Infinity;
-	var dateOldest = 0;
-	$.each(buzzdata.items, function(item) {
-		var itemDate = new Date(item.published);
-		if (itemDate < dateNewest) dateNewest = itemDate;
-		if (itemDate > dateOldest) dateOldest = itemDate;
+	// calculate the dates
+	calcBuzzDates();
+	// create each element
+	$.each(buzzdata.items, function(i) {		
+		// get link url
+		var url = (this.links.alternate.length > 0) ?
+			this.links.alternate[0].href : "#";
+		// create the box
+		addBox(this.title, this.dateDiff, url);
 	});
-	var dateRange = dateNewest - dateOldest;
-
-	$.each(buzzdata.items, function(item) {
-		
-		var item = buzzdata.items[i];
-		var dateDiff = Math.abs(dateNewest - new Date(item.published));
-
-//		if (dateDiff == Infinity) dateDiff = 100;
-		var dateFactor = Math.round(dateDiff / dateRange);
-
-		console.log("dateDiff: " + dateDiff);
-//		addBox(item.title, dateDiff);
-
-	}
-
+	// animate to position
+	updateBuzz();
 }
+
+function updateBuzz() {
+	if (!window.isbeingdragged) {
+		// calculate the dates
+		calcBuzzDates();
+		// update each buzz
+		$('#container > div').each(function() {
+			var age = parseInt($(this).attr("age"));
+			$(this).animate(setPosSize(age, $(this).attr("theta"), null), "slow", "linear", function() {
+				if (age > PRECISION_RANGE) $(this).fadeOut("slow", function() { $(this).remove(); });
+			});
+		});
+	}
+	//setTimeout("updateBuzz()", 500);
+}
+/*
+$(window).keypress(function (e) {
+	if (e.which == 32) {
+		$('#container > div').attr("age", 100);
+		updateBuzz();
+	}
+}*/
 
 </script>
 <style type="text/css">
 .hidden { display:none; }
 #container { width:100%; height:100%; }
-.bezibox { 
+.bezibox {
 	position:absolute; 
+	top:0px; left:0px;
+
 	border:1px solid #ccc;
-	rounded-corners:5px;
-	top:0px; left:0px;	
+	border-radius:5px;
+	opacity:0.8;
+	cursor:pointer;
+
+	overflow:hidden;
+	background:#3a3;
+	color:#fff;
+	padding:6px;
 }
 
 }
 </style>
+<script>$.getJSON('samplebuzzfeed.json', function(d) { buzzdata = d.data; createBuzz(); })</script>
+<!--script src="https://www.googleapis.com/buzz/v1/activities/googlebuzz/@public?alt=json&callback=getBuzzData"></script-->
