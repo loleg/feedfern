@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../raphael/demo.css" type="text/css" media="screen"> 
 </head>
 <body>
+	<div id="feedfern"></div>
 	<div id="container"></div>
 </body>
 <script type="text/javascript" charset="utf-8">
@@ -54,6 +55,7 @@ function addBox(content, age, myurl) {
 		.ondrop(function() { window.isbeingdragged = false; })
 		.mousedown(function() {
 			if(this.isAnim || this.isBig) return;
+			// increase size and opacity on mouse down
   			$(this).css("opacity","1.0").animate({
 				"width":$(this).width()*2,
 				"height":$(this).height()*2,
@@ -63,12 +65,15 @@ function addBox(content, age, myurl) {
 		})
 		.mouseup(function() {
 			if(this.isAnim || !this.isBig) return;
+			// reduce size on mouse up
 			$(this).css("opacity","0.5").animate({
 				"width":parseInt($(this).width()/2),
 				"height":parseInt($(this).height()/2),
 				"font-size":parseInt($(this).css("font-size"))-5,
 			}, "fast", "linear", function() { this.isAnim = false; this.isBig = false; });
-			if (parseInt($(this).offset().left) > parseInt(container.width()) - parseInt($(this).width()) / 2) $(this).remove();
+			// remove if thrown off-screen
+			if (parseInt($(this).offset().left) > 
+				parseInt(container.width()) - parseInt($(this).width()) / 2) $(this).remove();
 			this.isAnim = true;
 		})
 	;
@@ -125,7 +130,6 @@ function updateBuzz() {
 			});
 		});
 	}
-	//setTimeout("updateBuzz()", 500);
 }
 /*
 $(window).keypress(function (e) {
@@ -153,8 +157,12 @@ $(window).keypress(function (e) {
 	color:#fff;
 	padding:6px;
 }
-
+#feedfern {
+	background:url(res/feedfern.png) no-repeat top left;
+	width:128px; height:128px;
+	position:absolute; top:0px; left:0px;
+	z-index:1000;
 }
 </style>
-<script>$.getJSON('samplebuzzfeed.json', function(d) { buzzdata = d.data; createBuzz(); })</script>
-<!--script src="https://www.googleapis.com/buzz/v1/activities/googlebuzz/@public?alt=json&callback=getBuzzData"></script-->
+<script>$.getJSON('samplebuzzfeed.json', getBuzzData)</script>
+<!--<script src="https://www.googleapis.com/buzz/v1/activities/googlebuzz/@public?alt=json&callback=getBuzzData"></script>-->
