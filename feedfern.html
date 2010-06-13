@@ -1,0 +1,180 @@
+<!doctype html>
+<head>
+	<title>Bezibel</title>
+	<script language="javascript" src="../raphael/test/vendor/jquery.js"></script>
+	<script language="javascript" src="../raphael/raphael.js"></script>
+	<script language="javascript" src="jquery.easydrag.js"></script>
+	<link rel="stylesheet" href="../raphael/demo.css" type="text/css" media="screen"> 
+</head>
+<body>
+	<div id="feedfern"></div>
+	<div id="container"></div>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+
+var ox = 0, oy = 0, PRECISION_RANGE = 100;
+var container = $("#container");
+
+// get Buzz feed
+var buzzdata = null; // TODO: cache in HTML5
+var hngrdata = null; // TODO: cache in HTML5
+var origin = null; // TODO: other corners
+
+$("#feedfern").click(function() {
+	if (buzzdata != null)
+	if ($("#container > div").length > 0) {
+		$("#container > div").each(function() { returnToZero(this) });
+	} else {
+		createBuzz();
+	}
+});
+
+function getBuzzData(d) { buzzdata = d.data; }
+
+function returnToZero(obj) {
+	$(obj).animate({ "width":"0px", "height":"0px",
+			 "font-size":"0px", "opacity":"0",
+			 "top": "0px", "left": "0px" }, 
+			"fast", "linear", function() { $(this).remove(); });
+}
+
+function setPosSize(age, theta) {
+	var width = 20 + (age) * 3, height = 10 + (age) * 1.4,
+		fontsize = 4 + age / 5,
+		distance = age * (container.width() - width) / PRECISION_RANGE;
+	var x = Math.round(Math.cos(theta) * distance),
+		y = Math.round(Math.sin(theta) * distance)/2;
+	//console.log("d:" + distance + " t:" + theta + " x:" + x + " y:" + y);
+	return { "width": width + "px", "height": height + "px",
+			 "font-size": fontsize + "px", 
+			 "top": y + "px", "left": x + "px" };
+}
+
+function addBox(content, age, myurl) {
+/*
+	var x = Math.round(Math.cos(theta) * distance + Math.sin(theta) * distance),
+        y = Math.round(-Math.sin(theta) * distance + Math.cos(theta) * distance);
+*/
+	var theta = Math.random() * Math.PI / 2;
+
+	container
+		.append('<div class="bezibox hidden">' + content + '</div>')
+		.find('.bezibox:last')
+	// Set metadata
+		.attr("href", myurl)
+	// Set position and animate
+		.css(setPosSize(1, theta))
+		.attr("age", age).attr("theta", theta)
+		.removeClass('hidden')
+		.dblclick(function() { window.open($(this).attr("href")); })
+	// Hover
+		.mouseover(function() {
+  			$(this).css({"opacity":"1.0","overflow-y":"scroll","z-index":"100"});
+		})
+		.mouseout(function() {
+			$(this).css({"opacity":"0.4","overflow-y":"hidden","z-index":""});
+		})
+	;
+}
+
+function calcBuzzDates() {
+	
+	// get date ranges
+	var dateNewest, dateOldest;
+	$.each(buzzdata.items, function() {
+		var itemDate = new Date(this.published);
+		if (itemDate / 60000 > 1) { // ignore 1970 dates
+			if (itemDate > dateNewest || !dateNewest) dateNewest = itemDate;
+			if (itemDate < dateOldest || !dateOldest) dateOldest = itemDate;
+		}
+	});
+	var dateRange = new Date().getTime() - dateOldest;
+
+	// set age difference on each element;
+	$.each(buzzdata.items, function(i) {
+		var dd = new Date(this.published) - dateOldest;
+			dd = (dd < 1) ? 0 : dd / dateRange;
+			dd = Math.round(dd * PRECISION_RANGE);
+		// minimum age
+		if (dd < 20) dd = 20;
+		// update age if element exists
+		container.find("[@age=" + this.dateDiff + "]").attr("age", dd);
+		this.dateDiff = dd;
+	});
+}
+
+function createBuzz() {
+	// calculate the dates
+	calcBuzzDates();
+	// create each element
+	$.each(buzzdata.items, function(i) {		
+		// get link url
+		var url = 
+			(this.links.href) ?
+				this.links.href :
+			(this.links.alternate.length > 0) ?
+				this.links.alternate[0].href : "#";
+		// create the box
+		addBox(this.title, this.dateDiff, url);
+	});
+	// animate to position
+	updateBuzz();
+}
+
+function updateBuzz() {
+	if (!window.isbeingdragged) {
+		// calculate the dates
+		calcBuzzDates();
+		// update each buzz
+		$('#container > div').each(function() {
+			var age = parseInt($(this).attr("age"));
+			$(this).animate(setPosSize(age, $(this).attr("theta")), "fast", "linear", function() {
+				if (age > PRECISION_RANGE) $(this).fadeOut("slow", function() { $(this).remove(); });
+			});
+		});
+	}
+}
+
+/*
+	Hunger feed
+*/
+$.getJSON("magpierss/linklist_json.php", function(data) {
+	if (!data) return;
+	hngrdata = {items:[]};
+	$.each(data, function(i, rssitem) {
+		hngrdata.items.push({
+			links: { href: rssitem.url },
+			published: rssitem.published,
+			title: rssitem.name
+		});
+	});
+});
+</script>
+<style type="text/css">
+.hidden { display:none; }
+#container { width:100%; height:100%; }
+.bezibox {
+	position:absolute; 
+	top:0px; left:0px;
+
+	background:#3a3 url(res/bg_fern.png) no-repeat center;
+
+	opacity:0.8;
+	border:1px solid #ccc;
+	border-radius:30px;
+	padding:10px;
+
+	cursor:pointer;
+	overflow:hidden;
+	color:#fff;
+}
+#feedfern {
+	background:url(res/feedfern.png) no-repeat top left;
+	width:128px; height:128px;
+	position:absolute; top:0px; left:0px;
+	z-index:1000; cursor:pointer;
+}
+</style>
+<script>$.getJSON('samplebuzzfeed.json', getBuzzData)</script>
+<!--<script src="https://www.googleapis.com/buzz/v1/activities/googlebuzz/@public?alt=json&callback=getBuzzData"></script>-->
