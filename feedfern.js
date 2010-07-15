@@ -48,14 +48,13 @@ function returnToZero(obj) {
 
 function setPosSize(age, theta) {
 	var width = 20 + (age) * 3, height = 10 + (age) * 1.4,
-		fontsize = 4 + age / 5,
+		fontsize = 4 + age / 2,
 		distance = age * (container.width() - width) / PRECISION_RANGE;
 	var x = Math.round(Math.cos(theta) * distance),
 		y = Math.round(Math.sin(theta) * distance)/2;
 	//console.log("d:" + distance + " t:" + theta + " x:" + x + " y:" + y);
 	return { "width": width + "px", "height": height + "px",
-			 "font-size": fontsize + "px", 
-			 "top": y + "px", "left": x + "px" };
+			 "font": fontsize + "px", "top": y + "px", "left": x + "px" };
 }
 
 function addBox(content, age, myurl) {
@@ -90,17 +89,18 @@ function calcBuzzDates() {
 	// get date ranges
 	var dateNewest, dateOldest;
 	$.each(showdata.items, function() {
-		var itemDate = new Date(this.published);
+		var itemDate = getBuzzDate((typeof this.updated == "undefined")?this.published:this.updated); 
 		if (itemDate / 60000 > 1) { // ignore 1970 dates
 			if (itemDate > dateNewest || !dateNewest) dateNewest = itemDate;
 			if (itemDate < dateOldest || !dateOldest) dateOldest = itemDate;
 		}
 	});
-	var dateRange = new Date().getTime() - dateOldest;
-
+	var dateRange = dateNewest - dateOldest;
+	
 	// set age difference on each element;
 	$.each(showdata.items, function(i) {
-		var dd = new Date(this.published) - dateOldest;
+		var dd = getBuzzDate((typeof this.updated == "undefined")?this.published:this.updated);
+			dd -= dateOldest;
 			dd = (dd < 1) ? 0 : dd / dateRange;
 			dd = Math.round(dd * PRECISION_RANGE);
 		// minimum age
@@ -110,6 +110,17 @@ function calcBuzzDates() {
 			container.find("[@age='" + this.dateDiff + "']").attr("age", dd);
 		this.dateDiff = dd;
 	});
+}
+
+function getBuzzDate(d) {
+	if (typeof d == "string" && d.indexOf("T")>0 && d.indexOf("Z")>0) {
+		// convert from Buzz format for updated
+		d = d.replace("T", "-").replace(":", "-").replace(":", "-").replace(".", "-").split("-");
+		// Date(year, month, day, hours, minutes, seconds, milliseconds)
+		return new Date(parseInt(d[0]), parseInt(d[1]), parseInt(d[2]), parseInt(d[3]), parseInt(d[4]), parseInt(d[5]));
+	} else {
+		return new Date(d);
+	}
 }
 
 function createBuzz() {

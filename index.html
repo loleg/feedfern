@@ -17,14 +17,15 @@
 This is a demonstration mashup that pulls together the public <a href="http://google.com/buzz">Google Buzz</a> feed 
 (easily customizable to use your own feed or search query), 
 together with the latest news from <a href="www.wfp.org/bloggers-against-hunger">Bloggers Against Hunger</a>
-and displays it on top of your web site using floating windows.
+and displays it on top of your web site using floating windows. Check the bottom of the page to see how to edit the feed.
 <a href="http://github.com/loleg/feedfern">Fork the source and make it better here</a>.
 </p>
 
-<p>Click on the page banner to open it. Click again to close. Keep clicking. 
-Double-clicking on any item that appears opens the link in a new window.</p>
+<p style="background:#ff6; padding:.5em .8em">Also check out <strong><a href="http://leotong.com/chipin/chipin/main/#home">Chip In</a></strong>, a mobile app that lets you give up just one simple, everyday luxury to help in the fight against hunger.</p>
 
-<p><b>Thanks</b> to the #hackcamp crew and all the <a href="http://london.hackcamp.org.uk/sponsors/">sponsors</a>, for a fantastic weekend of fun & code!</p>
+<p>Made with: <i><a href="#">Buzz API</a>, <a href="#">Bloggers Against Hunger feeds</a>, <a href="#">jQuery 1.4</a>, <a href="#">MagpieRSS</a>, <a href="#">PHP</a>, <a href="#">HTML5</a>, <a href="#">CSS3</a>, <a href="#">gEdit</a>, <a href="#">GIMP</a>, <a href="#">Ubuntu Linux</a></i>.</p>
+
+<p><b>Thanks</b> to the #hackcamp crew and all the <a href="http://london.hackcamp.org.uk/sponsors/">sponsors</a>, for a <a href="http://ol.posterous.com/hackcamp">fantastic weekend</a>!</p>
 
 	<script src="http://www.wfpwidgets.org/banner.js" type="text/javascript"></script>
 	<script type="text/javascript" id="wfp-ws">site_id = "NzI="; banner = "20";</script>
@@ -32,8 +33,16 @@ Double-clicking on any item that appears opens the link in a new window.</p>
 	</div></center>
 </body>
 <script language="javascript" src="feedfern.js"></script>
+<!-- Pre-loads the backgrounds -->
 <img src="res/bg_fern.png" style="display:none"/>
 <img src="res/bg_fern_dried.png" style="display:none"/>
+<!-- Gets the latest Bloggers Against Hunger news -->
 <script>$.getJSON('magpierss/hunger_json.php', getFeedData)</script>
-<script>$.getJSON('samplebuzzfeed.json', getBuzzData)</script><!--
-<script src="https://www.googleapis.com/buzz/v1/activities/googlebuzz/@public?alt=json&callback=getBuzzData"></script>
+<!-- Change this to one of the examples below, and see Buzz API for info on how to use: -->
+<script src="https://www.googleapis.com/buzz/v1/activities/search?q=haiti&alt=json&callback=getBuzzData"></script>
+<!-- Just for testing: -->
+<!-- <script>$.getJSON('samplebuzzfeed.json', getBuzzData)</script> -->
+<!-- 10 latest public activities from Buzz: -->
+<!-- <script src="https://www.googleapis.com/buzz/v1/activities/googlebuzz/@public?alt=json&callback=getBuzzData"></script> -->
+<!-- Example buzz feed with query and date: -->
+<!-- <script src="https://www.googleapis.com/buzz/v1/activities/search?q=hunger+date:%3E2010&alt=json&callback=getBuzzData"></script> -->
